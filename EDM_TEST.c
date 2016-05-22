@@ -401,7 +401,7 @@ void InitEPwm1()
    EPwm1Regs.TBPHS.half.TBPHS = 0x0000;       // Phase is 0
    EPwm1Regs.TBCTR = 0x0000;                  // Clear counter
    EPwm1Regs.TBCTL.bit.HSPCLKDIV = TB_DIV2;   // Clock ratio to SYSCLKOUT/4=37.5MHZ;
-   EPwm1Regs.TBCTL.bit.CLKDIV = TB_DIV2;	  // PWM1 freq = 10KHZ£»
+   EPwm1Regs.TBCTL.bit.CLKDIV = TB_DIV2;	  // PWM1 freq = 10KHZ;
 
    // Setup shadow register load on ZERO
    EPwm1Regs.CMPCTL.bit.SHDWAMODE = CC_SHADOW;
